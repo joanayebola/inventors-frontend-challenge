@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inventors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="header-background" class="header-background"></div>
+        <div class="header-content">
+            <h1 id="movie-title"></h1>
+            <a id="watch-now-btn" href="#">Watch Now</a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search movies...">
+        <button id="search-button">Search</button>
+        <label for="sort-select">Sort by:</label>
+        <select id="sort-select">
+            <option value="popularity">Popularity</option>
+            <option value="release_date">Release Date</option>
+        </select>
+    </div>
+
+    <div class="movies-slider">
+        <div id="movies-list" class="movies-list"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-movie-title"></h2>
+            <p><strong>Rating:</strong> <span id="modal-movie-rating"></span></p>
+            <p><strong>Runtime:</strong> <span id="modal-movie-runtime"></span> minutes</p>
+            <p><strong>Genre:</strong> <span id="modal-movie-genre"></span></p>
+            <p><strong>Overview</strong> <span id="modal-movie-overview"></span></p>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Inventors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
